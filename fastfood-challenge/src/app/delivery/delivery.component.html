@@ -1,0 +1,15 @@
+<div class="delivery">
+    <h2>Punto de Entrega</h2>
+    <form (ngSubmit)="onSubmit()" #deliveryForm="">
+      <div class="form-group">
+        <label for="address">Dirección</label>
+        <input type="text" id="address" name="address" [(ngModel)]="deliveryPoint.address" required>
+      </div>
+      <div class="form-group">
+        <label for="deliveryTime">Hora de Entrega</label>
+        <input type="time" id="deliveryTime" name="deliveryTime" [(ngModel)]="deliveryPoint.deliveryTime" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>
+  

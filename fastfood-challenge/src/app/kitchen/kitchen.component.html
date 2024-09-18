@@ -1,0 +1,34 @@
+<div class="kitchen-container">
+    <h2>Pedidos en la Cocina</h2>
+  
+    <!-- Pedidos en preparación -->
+    <div *ngIf="pedidosEnPreparacion.length > 0">
+      <h3>En Preparación</h3>
+      <ul>
+        <li *ngFor="let pedido of pedidosEnPreparacion">
+          <strong>Pedido #{{ pedido.number }}:</strong> {{ pedido.name }} - {{ pedido.description }}
+          <div>
+            <button (click)="completarPedido(pedido)">Marcar como 'Listo'</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Pedidos listos para entregar -->
+    <div *ngIf="pedidosListos.length > 0">
+      <h3>Listos para Entregar</h3>
+      <ul>
+        <li *ngFor="let pedido of pedidosListos">
+          <strong>Pedido #{{ pedido.number }}:</strong> {{ pedido.name }} - {{ pedido.description }}
+          <div>
+            <button (click)="completarPedido(pedido)">Marcar como 'Entregado'</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="pedidos.length === 0">
+      <p>No hay pedidos pendientes.</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,12 @@
+<div class="pos-container">
+  <h2>Crear Nuevo Pedido</h2>
+  <form (ngSubmit)="crearPedido()">
+    <label for="cliente">Nombre del Cliente</label>
+    <input type="text" id="cliente" [(ngModel)]="cliente" name="cliente" required>
+
+    <label for="descripcion">Descripción del Pedido</label>
+    <input type="text" id="descripcion" [(ngModel)]="descripcion" name="descripcion" required>
+
+    <button type="submit" [disabled]="!cliente || !descripcion">Crear Pedido</button>
+  </form>
+</div>

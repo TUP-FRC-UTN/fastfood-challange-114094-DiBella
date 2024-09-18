@@ -1,0 +1,55 @@
+.kitchen-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kitchen-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .kitchen-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .kitchen-container li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .kitchen-container button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .kitchen-container button:hover {
+    background-color: #218838;
+  }
+  
+  .kitchen-container button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .kitchen-container button:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  .kitchen-container p {
+    text-align: center;
+    color: #555;
+  }
+  
